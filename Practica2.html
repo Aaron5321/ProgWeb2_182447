@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <h1>PRACTICA 2: Prestamos de Materiales de Biblioteca</h1>
+        <div>
+            <div>
+                <div><h2>Definición de Problema: </h2></div>
+                <div> Una biblioteca solicita un programa en el cual pueda controlar el inventario de libros, los usuarios y los prestamos para estos mismos, además sus empleados podrán acceder a los prestamos realizados. El programa debe de tener registro de sus usuarios, de sus empleados y de cada libro existente. </div>
+                <center>
+                <div class="img">
+                    <div style="width: 30%;">
+                        <div><h2>Diagrama ER</h2></div>
+                        <div><img src="Logico2.jpg" class="img2"></div>
+                    </div>
+                    <div style="width: 60%;">
+                        <div><h2>Diagrama Racional</h2></div>
+                        <div><img src="Conceptual2.jpg" class="conceptual"></div>
+                    </div>
+                </div></center>
+                <div>
+                    <div class="consultati">  <center><h3>C O N S U L T A S</h3></center> </div><br>
+                    <div class="consulta"><h3>CREATE database bibliotec;</h3></div><br>
+                    <div class="consulta">
+                        
+                        <div>
+                            <p>CREATE TABLE bibliotec.clientes (ID INT(5) NOT NULL , Nombre VARCHAR(30) NOT NULL , Apellidop VARCHAR(30) NOT NULL , ApellidoM VARCHAR(30) NOT NULL , Telefono INT(10) NOT NULL , Email VARCHAR(30) NOT NULL , Calle VARCHAR(30) NOT NULL , NumCasa INT(5) NOT NULL , Colonia VARCHAR(30) NOT NULL , Ciudad VARCHAR(30) NOT NULL , Estado VARCHAR(30) NOT NULL , FechaNac INT(12) NOT NULL , RFC INT(15) NOT NULL , PRIMARY KEY (ID)) ENGINE = InnoDB;</p>
+                        </div>
+                    </div>
+                    <div class="consulta">CREATE TABLE bibliotec.empleados (Id INT(5) NOT NULL , Nombre VARCHAR(20) NOT NULL , ApellidoP VARCHAR(20) NOT NULL , ApellidoM VARCHAR(20) NOT NULL , Puesto VARCHAR(20) NOT NULL , Turno VARCHAR(10) NOT NULL , Salario INT(6) NOT NULL , NumNomina INT(10) NOT NULL , Email VARCHAR(30) NOT NULL , Comision VARCHAR(5) NOT NULL , Telefono INT(10) NOT NULL , PRIMARY KEY (Id)) ENGINE = InnoDB;</div>
+                    <div class="consulta">CREATE TABLE bibliotec.ventas (Folio INT(10) NOT NULL , Fecha DATE NOT NULL , Hora DATE NOT NULL , MontoTotal INT(10) NOT NULL , Descuento INT(10) NOT NULL , TipoPago VARCHAR(30) NOT NULL , IdEmpleado INT(10) NOT NULL , IdCliente INT(10) NOT NULL , PRIMARY KEY (Folio)) ENGINE = InnoDB;</div>
+                    <div class="consulta">CREATE TABLE bibliotec.autos (NumSerie INT(10) NOT NULL , Model VARCHAR(30) NOT NULL , Anio INT(5) NOT NULL , Color VARCHAR(30) NOT NULL , Gamma VARCHAR(30) NOT NULL , Transmision VARCHAR(30) NOT NULL , Precio INT(10) NOT NULL , Extra TEXT NOT NULL ) ENGINE = InnoDB;</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

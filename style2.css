@@ -1,0 +1,57 @@
+body
+{
+    background-color: rgb(189, 225, 189);
+    color: black;
+    font-size: medium;
+}
+h1
+{
+    color: rgb(16, 53, 16);
+    font-size: 3pc;
+    text-align: center;
+}
+h2
+{
+    color: rgb(16, 53, 16);
+    font-size: 2pc;
+}
+div.img
+{
+    display: flex;
+}
+img
+{
+    margin: 1%;
+    height: 800px;
+}
+img.conceptual 
+{
+    height: 400px;
+}
+div
+{
+    margin:2%;
+}
+.img2
+{
+    margin: 1%;
+    height: 400px;
+}
+.consulta
+{
+    width: 80%;
+    background-color: rgb(10, 111, 10);
+    color: aliceblue;
+    margin: 2%;
+    border: 4px solid rgb(16, 53, 16);
+    border-radius: 10px;
+}
+.consultati
+{
+    width: 80%;
+    background-color: rgb(7, 70, 7);
+    color: aliceblue;
+    margin: 2%;
+    border: 4px solid rgb(16, 53, 16);
+    border-radius: 10px;
+}
